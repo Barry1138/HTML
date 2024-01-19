@@ -1,0 +1,28 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <script>
+        const holiday = new Date(2023, 6, 4)
+        console.log('Object: ' + holiday)
+
+        holiday.setFullYear(2023)
+        holiday.setMonth(10)
+        holiday.setDate(31)
+        holiday.setHours(12)
+        holiday.setSeconds(0)
+        holiday.setMilliseconds(0)
+
+        console.log('String: ' + holiday.toLocaleString())
+        console.log('UTC: ' + holiday.toUTCString())
+
+        console.log('Locale: ' + holiday.toLocaleString())
+        console.log('Date: ' + holiday.toDateString())
+        console.log('Time: ' + holiday.toTimeString())
+    </script>
+</body>
+</html>

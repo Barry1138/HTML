@@ -1,0 +1,21 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <ul id="list"></ul>
+
+    <script>
+        const list = document.getElementById('list')
+
+        list.innerHTML = '<li>Linked From: ' + document.referrer
+        list.innerHTML = '<li>Title: ' + document.title
+        list.innerHTML = '<li>URL: ' + document.URL
+        list.innerHTML = '<li>Domain: ' + document.domain
+        list.innerHTML = '<li>Last Modified: ' + document.lastModified
+    </script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <script>
+        const days = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat']
+        const months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
+        const now = new Date()
+
+        let year = now.getFullYear()
+        let month = now.getMonth()
+        let dayNumber = now.getDate()
+        let dayName = now.getDay()
+
+        month = months[month]
+        dayName = days[dayName]
+
+        let usDate = dayName + ', ' + month + ' ' + dayNumber + ', ' + year
+        let ukDate = dayName + ', ' + dayNumber + ' ' + month + ', ' + year
+
+        console.log('United States of America Date: ' + usDate)
+        console.log('United Kingdom of England Date: ' + ukDate)
+    </script>
+</body>
+</html>

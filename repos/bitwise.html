@@ -1,0 +1,31 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <script>
+        (function () {
+
+            let numOne = 10, numTwo = 5
+
+            // Statements to be inserted here.
+
+            console.log('numOne: ' + numOne)
+            console.log('numTwo: ' + numTwo)
+
+            numOne = numOne ^ numTwo
+                        // 1010 ^ 0101 = 1111 = (decimal 15)
+            numTwo = numOne ^ numTwo
+                        // 1111 ^ 0101 = 1010 = (decimal 10)
+            numOne = numOne ^ numTwo
+                        // 1111 ^ 1010 = 0101 = (decimal 5)
+
+            console.log('\n' + 'numOne: ' + numOne)
+            console.log('numTwo: ' + numTwo)
+        }) ()
+    </script>
+</body>
+</html>

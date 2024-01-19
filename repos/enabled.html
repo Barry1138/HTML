@@ -1,0 +1,34 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <p id="info">
+        <script>
+            const info = document.getElementById('info')
+            let status = ''
+
+            status = (navigator.javaEnabled()) ? 'Enabled' : 'Disabled'
+            info.innerHTML += 'Java Support is ' + status + '<hr>'
+
+            status = (navigator.cookieEnabled) ? 'Enabled' : 'Disabled'
+            info.innerHTML += 'Cookie Support is ' + status + '<hr>'
+
+            if (navigator.plugins.length !== 0) {
+                info.innerHTML += 'No. of Plugins: ' + navigator.plugins.length
+                info.innerHTML += '<br>Example: ' + navigator.plugins[0].name
+                info.innerHTML += '<br>For: ' + navigator.plugins[0].description + '<hr>'
+            }
+
+            if (navigator.mimeTypes.length !== 0) {
+                info.innerHTML += 'No. of MIME Types: ' + navigator.mimeTypes.length
+                info.innerHTML += '<br>Example: ' + navigator.mimeTypes[1].name
+                info.innerHTML += '<br>For: ' + navigator.mimeTypes[1].description
+            }
+        </script>
+    </p>
+</body>
+</html>

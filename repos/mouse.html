@@ -1,0 +1,31 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <p id="box">Target</p>
+    <p id="info">Place Mouse Over Target</p>
+    <button id="btn">Click Me</button>
+
+    <script>
+        (function () {
+            const box = document.getElementById('box')
+            const btn = document.getElementById('btn')
+
+            box.addEventListener('mouseover', function (event) { reactTo(event, 'Red') })
+            box.addEventListener('mouseover', function (event) { reactTo(event, 'Purple') })
+            box.addEventListener('mouseover', function (event) { reactTo(event, 'Green') })
+            box.addEventListener('mouseover', function (event) { reactTo(event, 'Blue') })
+            btn.addEventListener('mouseover', function (event) { reactTo(event, 'Orange') })
+        }) ()
+
+        function reactTo(event, color) {
+            document.getElementById('box').style.background = color
+            document.getElementById('info').innerText = event.type
+        }
+    </script>
+</body>
+</html>

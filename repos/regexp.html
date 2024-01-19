@@ -1,0 +1,29 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <script>
+        const system = 'Windows', suite = 'Office', pattern = /ice/i
+
+        console.log('In ' + system + '? ' + pattern.test(system))
+        console.log('In ' + suite + '? ' + pattern.test(suite))
+
+        let result = pattern.exec(suite)
+        if (result) {
+            console.log('Found ' + result + ' at ' + result.index)
+        }
+        else { console.log('No Match Found') }
+
+        let email = 'mike@example'
+        const format = /.+\@.+\..+/
+        console.log(email + ' Valid? ' + format.test(email))
+
+        email += '.com'
+        console.log(email + ' Valid? ' + format.test(email))
+    </script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <h1 id="heading">Top 5 Dystopian Science Fiction Works</h1>
+    <ol id="list">
+        <li>Atlas Shrugged by Ayn Rand</li>
+        <li>1984 by George Orwell</li>
+        <li>Fahrenheit 451 by Ray Bradbury</li>
+        <li>The Minority Report by Philip K. Dick</li>
+        <li>Brave New World by Auldous Huxley</li>
+    </ol>
+
+    <script>
+        const itemSix = document.createElement('li')
+        const itemSeven = document.createElement('li')
+        const itemEight = document.createElement('li')
+        const itemNine = document.createElement('li')
+        const itemTen = document.createElement('li')
+        const heading = document.getElementById('heading')
+
+        itemSix.innerText = 'Idiocracy by Mike Judge'
+        itemSeven.innerText = 'Anthem by Ayn Rand'
+        itemEight.innerText = 'Animal Farm by George Orwell'
+        itemNine.innerText = 'A Clockwork Orange by Anthony Burgess'
+        itemTen.innerText = 'THX1138 by George Lucas'
+
+        document.getElementById('list').appendChild(itemSix)
+        document.getElementById('list').appendChild(itemSeven)
+        document.getElementById('list').appendChild(itemEight)
+        document.getElementById('list').appendChild(itemNine)
+        document.getElementById('list').appendChild(itemTen)
+
+        heading.setAttribute('style', 'color:Red')
+
+        heading.innerText = 'The Best Dystopian Science Fiction Works of History'
+    </script>
+</body>
+</html>

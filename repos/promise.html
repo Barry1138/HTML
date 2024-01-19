@@ -1,0 +1,25 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <script>
+        const promise = new Promise(function (resolve, reject) {
+            let random = Math.round(Math.random() * 10)
+
+         if (random % 2 === 0)
+        { setTimeout(function () { resolve(random) }, 1000)} 
+        else
+        { setTimeout(function () {reject(random)}, 1000)}
+        })
+
+        promise
+            .then(console.log(promise))
+            .then(function (res) { console.log(res + ' Is Even') })
+            .catch(function (err) { console.log(err + ' Is Odd') })
+    </script>
+</body>
+</html>

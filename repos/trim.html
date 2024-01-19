@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <script>
+        let str = '  Hatred For All, Love For None.  '
+
+        console.log('String: ' + str)
+        console.log('Starts With "L"? ' + str.startsWith('L'))
+        console.log('Ends With "."? ' + str.endsWith('.'))
+        console.log('First Letter: ' + str[0])
+
+        str = str.trim()
+
+        console.log('Trimmed: ' + str)
+        console.log('Starts With "L"? ' + str.startsWith('L'))
+        console.log('Ends With "."? ' + str.endsWith('.'))
+        console.log('First Letter: ' + str[0])
+
+        console.log('\nIncludes "Hat" ? ' + str.includes('Hat'))
+        console.log('Includes "hat" ? ' + str.includes('hat'))
+
+        console.log('\nRepeat:\n' + str.repeat(10))
+    </script>
+</body>
+</html>

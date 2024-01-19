@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <script>
+        (function () {
+            let result, yes = true, no = false
+
+            //Statements to be inserted here
+
+            result = yes && yes
+            console.log('Are both true? ' + result)
+
+            result = yes && no
+            console.log('Are both still true? ' + result)
+
+            result = yes || no
+            console.log('Are either true? ' + result)
+
+            result = no || no
+            console.log('Are either still true? ' + result)
+
+            console.log('Original value: ' + result)
+            yes = !yes
+            console.log('Toggled value: ' + result)
+        }) ()
+    </script>
+</body>
+</html>

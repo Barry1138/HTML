@@ -1,0 +1,21 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <script>
+        const add = (function () {
+            let count = 0
+            const nested = function () { return count = count + 1 }
+            return nested
+
+            console.log('Count is ' + add())
+            console.log('Count is ' + add())
+            console.log('Count is ' + add())
+        })
+    </script>
+</body>
+</html>

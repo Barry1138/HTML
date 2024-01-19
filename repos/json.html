@@ -1,0 +1,27 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <script>
+        let obj = {
+            category: 'Fashion',
+            models: [{ name: 'Alice', age: 29, city: 'New York' },
+                { name: 'Kelly', age: 35, city: 'Las Vegas' }]
+        }
+
+        let json_obj = JSON.stringify(obj)
+        console.log(json_obj)
+
+        let new_obj = JSON.parse(json_obj)
+        console.log(new_obj)
+
+        console.log(new_obj['category'])
+        console.log(new_obj.models[0].name)
+        console.log(new_obj['models'][1]['name'])
+    </script>
+</body>
+</html>
