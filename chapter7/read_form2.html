@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Example</title>
+    <link rel="stylesheet" type="text/css" href="main.css">
+</head>
+
+<body>
+    <main>
+        <form action="read_form2.php" method="post">
+            <h2>After Dinner</h2>
+            <div id="data">
+                <h4>Beverage (pick one)</h4>
+                <input type="radio" name="drink" value="latte">latte @$4.50<br>
+                <input type="radio" name="drink" value="hot tea">hot tea @$2.50<br>
+                <input type="radio" name="drink" value="coffee">coffee @$2.50<br>
+                
+                <h4>Sides (choose all you want @$3.00)</h4>
+                <select name="sides[]" size = "4" multiple>
+                    <option value="french fries">french fries</option>
+                    <option value="mashed potatoes">mashed potatoes</option>
+                    <option value="vegetable medley">vegetable medley</option>
+                    <option value="french beans">french beans</option>
+                </select>
+                <h4>Dessert (choose all you want @$4.00)</h4>
+                <input type="checkbox" name="dessert[]" value="cake">cake<br>
+                <input type="checkbox" name="dessert[]" value="pie">pie<br> 
+                <input type="checkbox" name="dessert[]" value="pudding">pudding<br> 
+                <input type="checkbox" name="dessert[]" value="pastries">pastries<br> 
+                <input type="checkbox" name="dessert[]" value="ice cream">ice cream<br>
+                <h4>Your review</h4>
+
+                <textarea name="review" cols="30" rows="5"></textarea>
+            </div>
+            <div id="buttons">
+                <label>&nbsp;</label>
+                <input type="submit" value="Submit Form"><br>
+            </div>
+        </form>
+    </main>
+</body>
+</html>
