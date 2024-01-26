@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<script>function lti_launch( vars ) { var query = ''; for(var key in vars) { if(query.length == 0) { query += '?' + key + '=' + encodeURIComponent(vars[key]); } else { query += '&' + key + '=' + encodeURIComponent(vars[key]); } } location.replace( '/d2l/customization/pearsonlti/6606/Launch' + query ); }</script><script src="Final%20Project%20-%20Option%20B%20Designing%20a%20Network_files/MathML.js"></script><script>document.addEventListener('DOMContentLoaded', function() { D2LMathML.DesktopInit('https://s.brightspace.com/lib/mathjax/2.6.1/MathJax.js?config=MML_HTMLorMML','https://s.brightspace.com/lib/mathjax/2.6.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML%2cSafe'); });</script><script>window.addEventListener('message', function(event) { 
+					if( !event.data ) {
+						console.debug( 'Empty event received' );
+						return;
+					}
+					var params = JSON.parse(event.data);
+					if( !params.subject || params.subject !== 'lti.frameResize') {
+						console.debug( 'Message subject was not lti.frameResize' );
+						return;
+					}
+			
+					const MAX_FRAME_HEIGHT = 10000
+					if( !params.height || params.height < 1 || params.height > MAX_FRAME_HEIGHT ) {
+						console.warn( 'Invalid height value received, aborting' );
+						return;
+					}
+					var el = document.getElementsByTagName( 'iframe' );
+					for ( var i=0; i < el.length; i++ ) {
+						if( el[i].contentWindow === event.source ) {
+							el[i].style.height = params.height + 'px';
+                            el[i].style.width = '100%';
+							console.info( 'Setting iFrame height to ' + params.height );
+                            console.info( 'Setting iFrame width to 100%' );
+						}
+					}
+				});</script></head>
+<body style="font-family: arial, helvetica, sans-serif;font-size: 12px;">
+<p><span style="font-size: 12pt;"><strong>Final Project - Option B: Designing a Network<br></strong></span></p>
+<p><span style="font-size: 12pt;"><strong>Guidelines</strong></span></p>
+<p><span style="font-size: 12pt;">Preferably, you should try and find a network professional to shadow for four hours (Final Project - Option A).</span></p>
+<p><span style="font-size: 12pt;">If you are unable to find a network 
+professional to shadow due to your schedule or any other reason, then 
+you may&nbsp;complete this option as an alternate project.</span></p>
+<p><span style="font-size: 12pt;">1. You will design a network based on the information learned throughout this course. You will follow these guidelines:</span></p>
+<p style="padding-left: 30px;"><span style="font-size: 12pt;">a. This is not a "group project." This is an individual project.</span></p>
+<p style="padding-left: 30px;"><span style="font-size: 12pt;">b. You 
+must choose the name of the company, type, size and nature of the 
+company. Make sure you include the answers to the questions presented 
+below.</span></p>
+<p style="padding-left: 30px;"><span style="font-size: 12pt;">c. You 
+will be designing a LAN (one LAN, one office operation - minimum 10 
+computers, maximum 20 computers or nodes). Make sure you include the 
+answers to the questions presented below.</span></p>
+<p style="padding-left: 30px;"><span style="font-size: 12pt;">d. This company is "new." No existing equipment has been installed.</span></p>
+<p><span style="font-size: 12pt;">2. Follow writing guidelines please. A
+ PowerPoint presentation with the details of the project is acceptable 
+or you may type your information to a Word document.</span></p>
+<p><span style="font-size: 12pt;">3. Attach copies (print screens) from 
+vendor's ads (from the Internet or other sources) as proof of cost. If I
+ do not see the price of the item displayed, you do not receive credit 
+for the print screen nor the price.</span></p>
+<p><span style="font-size: 12pt;">4. You are required to submit two diagrams; one logical and one physical.</span></p>
+<p style="padding-left: 30px;"><span style="font-size: 12pt;">a. The logical diagram should display the topology of the network with the IP addresses and their respective subnets.</span></p>
+<p style="padding-left: 30px;"><span style="font-size: 12pt;">b. The 
+physical diagram should display where in the office each computer (or 
+node) is located. You should display the walls, the closets etc...it is 
+like a builder's set of plans displaying the location of each node 
+(computer, server, router, hub, etc). Think of it as an aerial view of 
+the office space. Of course you also need to add some type of naming 
+convention that will identify each one from the other. Note: some 
+sources define a physical diagram as the cable diagram, we are taking it
+ a step higher here, thus the reason for the clarification.</span></p>
+<p style="padding-left: 30px;"><span style="font-size: 12pt;">c. As a 
+precaution please submit print screens AS WELL AS the original file of 
+your diagrams. There are many diagrams/software packages out there 
+(Visio, SmartDraw, CADE etc.). Since I do not have all the available 
+software packages in the market, or just in case your version is older 
+or different from the software I use, the print screens will allow me to
+ view them without the need of opening the original file. HOWEVER, I do 
+require the original file to make sure you were the one completing this 
+work.</span></p>
+<p style="padding-left: 30px;"><span style="font-size: 12pt;">For an example of physical and/or logical diagrams see:&nbsp;<span dir="ltr"></span></span></p>
+<div></div>
+<div><a href="https://www.edrawsoft.com/Network-Diagram-Examples.php" target="_blank" rel="noopener noreferrer" data-auth="NotApplicable" id="LPlnk353172">https://www.edrawsoft.com/Network-Diagram-Examples.php&nbsp;</a><span style="font-size: 12pt;"><span dir="ltr"></span></span><span style="font-size: 12pt;">(this is what I look for in a physical diagram even though this site defines it a tad differently) or the following.</span></div>
+<p style="padding-left: 30px;"><span style="font-size: 12pt;">Using a building diagram, create a network layout/cabling diagram that includes:</span></p>
+<ul>
+<li><span style="font-size: 12pt;">Telco demarcation point if necessary</span></li>
+<li><span style="font-size: 12pt;">Wiring closet</span></li>
+<li><span style="font-size: 12pt;">Cable runs</span></li>
+<li><span style="font-size: 12pt;">Physical locations of important network devices</span></li>
+</ul>
+<p><span style="font-size: 12pt;">FAQ - "What information should I include?"</span></p>
+<ul>
+<li><span style="font-size: 12pt;">List all network devices and endpoints.</span></li>
+<li><span style="font-size: 12pt;">A network device is anything that is 
+used to transfer data from one point to another. This includes routers, 
+switches, hubs, remote access equipment, firewalls, etc.</span></li>
+<li><span style="font-size: 12pt;">Endpoints are workstations, servers, printers, etc.</span></li>
+<li><span style="font-size: 12pt;">Don't forget to allow for company growth…future growth…</span></li>
+</ul>
+<p><span style="font-size: 12pt;"><span style="color: #000000; font-family: arial, helvetica, sans-serif; font-size: 16px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: auto; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: #ffffff;">For grading guidelines, review the <a href="https://mycourses.spcollege.edu/content/enforced/199252-OFR_CNT1000_1036_0555/Final%20Project/Option%20B%20Grade%20Point%20Distribution.html" target="_blank" rel="noopener">Option B Grade Point Distribution</a>&nbsp;</span><span style="color: #000000; font-family: arial, helvetica, sans-serif; font-size: 16px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: auto; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: #ffffff;">carefully.</span><br></span></p>
+<p><span style="font-size: 12pt;">Submit your project for Option B to the Final Project Dropbox.</span></p>
+
+</body></html>
