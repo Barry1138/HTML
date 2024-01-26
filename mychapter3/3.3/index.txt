@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>KayakDoorCounty.net</title>
+<meta charset="utf-8">
+</head>
+<style>
+body { font-family: Verdana, Arial, sans-serif; }
+h2, h3 { font-family: Georgia, "Times New Roman", serif; }
+</style>
+<body>
+<header>
+  <h1>KayakDoorCounty.net</h1>
+</header>
+<nav>
+  <b><a href="index.html">Home</a> &nbsp;<a href="Tours.html">Tours</a> &nbsp;<a href="Reservations.html">Reservations</a> &nbsp;<a href="contact.html">Contact</a></b>
+</nav>
+<main>
+  <h2>Your next adventure is only a paddle away....</h2>
+  <p>Take a guided kayak tour while you explore the shoreline of scenic Door County.</p>
+  <h3>Featured tours this weeks:</h3>
+<ul>
+  <li>Cana Island</li>
+  <li>Mink River</li>
+  <li>Europe Lake</li>
+</ul>
+</main>
+<footer>
+  <small><i>Copyright &copy; 2016 KayakDoorCounty.net</i></small>
+</footer>
+</body>
+</html>
