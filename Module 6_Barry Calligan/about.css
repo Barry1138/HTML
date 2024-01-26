@@ -1,0 +1,48 @@
+body { background-color: #030303;
+       background-image: url(images/Mockup.png);
+       background-repeat: no-repeat;
+       background-size: 1350px 850px; 
+       color: #030303; 
+	   font-family: Arial, Cambria, NimbusSanExtBla; }
+header { background-color: #F79646;
+         background-image: url(images/BBQlogo.png);
+	     background-position: left;
+	     background-repeat: no-repeat;
+		 background-size: 200px 200px;
+		 text-align: center;
+         height: 150px; }
+img { width: 150px;
+      height: 150px; }
+h1 { color: #000000;
+     font-size: 350%;
+	 font-family: NimbusSanExtBla;
+     font-weight: bold;
+     font-style: italic;
+     padding-top: 50px;
+     padding-right: 50px;	 }
+nav { background-color: #FFFF00;
+      text-align: center;
+	  font-family: Cambria;
+      font-style: italic;
+      font-size: 200%;	  
+	  padding: 1em; }
+main { background-color: #030303; 
+       background-image: url(images/AllMeatMeals.png);
+	     background-position: right;
+	     background-repeat: no-repeat;
+		 background-size: 250px 250px;}
+h2, p { color: #FFFFFF; 
+        font-size: 200%;
+		font-family: Cambria;
+	    font-style: italic; }
+footer { background-color: #FFF5EE;
+         font-size: small;
+	     font-style: italic;
+	     text-align: center;
+	     padding: 1em; }
+#wrapper { width: 80%;
+           margin-left: auto;
+		   margin-right: auto;
+		   background-color: #030303;
+		   min-width: 1000px;
+		   max-width: 1280px; }
