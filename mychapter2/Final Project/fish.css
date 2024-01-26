@@ -1,0 +1,78 @@
+body { background-color: #0414BE; 
+       color: #0414BE; 
+	   font-family: Arial, Georgia, Times New Roman; }
+header { background-color: #FFA500;
+         background-image: url(GoFishLogo.png);
+	     background-position: center-left;
+	     background-repeat: no-repeat;
+		 background-size: contain;
+		 text-align: center;
+         height: 150px; }
+img { width: 150px;
+      height: 150px; }
+h1 { color: #7FFFD4;
+     font-size: 350%;
+	 font-family: Arial;
+     font-weight: bold;
+     font-style: italic;
+     padding-top: 50px;
+     padding-right: 50px;	 }
+nav { background-color: #7FFFD4;
+      text-align: center;
+	  font-family: Georgia;
+      font-style: italic;
+      font-size: 200%;	  
+	  padding: 1em;
+      word-spacing: 5px; }
+nav a { text-decoration: none; }
+nav a:link { color: #FFA500; }
+nav a:visited { color: #FFA500; }
+nav a:hover {color: #FFF5EE; }
+main { background-color: #0414BE;
+       background-image: url(GoFishLogo2.png);
+       background-repeat: repeat;
+       background-position: center;
+       background-size: 180px 180px;  }
+img { width: 130px;
+      height: 130px; }
+h2, h3, p, ul { color: #ffffff; 
+            font-size: 250%;
+		    font-family: Georgia;
+	        font-style: italic; }
+table { background-color: #0414BE;
+        width: 60%;
+		border-collapse: collapse;
+		margin-left: auto;
+		margin-right: auto;
+        margin-bottom: 1em; }
+td, th { padding: 5px;
+         border: 1px solid #FFA500;
+         color: #FFA500;
+         text-align: center; }
+tr:nth-of-type(even) { background-color: #ffffff; }
+caption { margin: 1em;
+          font-family: Georgia;
+          font-weight: bold;
+          font-size: 120%;
+          color: #ffffff; }
+label { float: left;
+        display: block;
+		text-align: right;
+		font-weight: bold;
+		width: 10em;
+        padding-right: 1em;
+        color: #ffffff;	}
+input, textarea { display: block;
+                  margin-bottom: 2em; }
+#mySubmit { margin-left: 12em; }
+footer { background-color: #FFF5EE;
+         font-size: small;
+	     font-style: italic;
+	     text-align: center;
+	     padding: 1em; }
+#wrapper { width: 90%;
+           margin-left: auto;
+		   margin-right: auto;
+		   background-color: #0414BE;
+		   min-width: 1280px;
+		   max-width: 1300px; }
