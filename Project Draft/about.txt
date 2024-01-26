@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Go Fish!::About Us</title>
+<meta charset="utf-8">
+<link href="fish.css" rel="stylesheet">
+</head>
+<body>
+<div id="wrapper">
+<header>
+  <h1>Go Fish!</h1>
+</header>
+<nav>
+  <a href="GoFish.html">Home</a> &nbsp;<a href="about.html">About Us</a> &nbsp;<a href="menu.html">Menu</a> &nbsp;<a href="contact.html">Contact Us</a>
+</nav>
+<main>
+<h2>About Us</h2>
+<p>Our restaurant is a seafood and grill<br>
+restaurant, dedicated to serving best quality of food,<br>
+music, and entertainment for countless hours of fun. We<br>
+hope our customers enjoy our food and our service.</p>
+</main>
+<footer>
+  <br>Copyright &copy; 2016 GoFish, All Rights Reserved.<br>
+</footer>
+</div>
+</body>
+</html>
