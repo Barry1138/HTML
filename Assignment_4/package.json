@@ -1,0 +1,15 @@
+{
+  "name": "assignment_4",
+  "version": "1.0.0",
+  "description": "",
+  "main": "lost_fortune40.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Barry Calligan",
+  "license": "ISC",
+  "dependencies": {
+    "inventory": "file:inventory/inventory-1.0.0.tgz",
+    "readline-sync": "^1.4.10"
+  }
+}
